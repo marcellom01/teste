@@ -1,12 +1,9 @@
 # Dependências
 node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-package-lock.json
-yarn.lock
+.venv/
+__pycache__/
 
-# Ambiente
+# Arquivos de configuração local
 .env
 .env.local
 .env.development.local
@@ -14,23 +11,27 @@ yarn.lock
 .env.production.local
 
 # Logs
-logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 *.log
 
-# Diretório de build
-/dist
-/build
-
-# Arquivos de sistema operacional
+# Arquivos temporários
 .DS_Store
 Thumbs.db
+*.tmp
+*.temp
 
-# Diretórios de cache
-.cache/
-.npm/
-
-# Arquivos de IDE e editores
-.idea/
+# IDEs
 .vscode/
+.idea/
 *.swp
 *.swo
+
+# Arquivos de sistema
+*.pid
+*.seed
+*.pid.lock
+
+# Arquivos específicos do Windsurf
+.windsurfrules
